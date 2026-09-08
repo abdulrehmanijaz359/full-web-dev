@@ -1,5 +1,4 @@
 
-/* General page styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +6,6 @@ body {
     color: #222;
 }
 
-/* Header */
 header {
     text-align: center;
     background-color: #2563eb;
@@ -24,7 +22,6 @@ h1 {
     font-size: 18px;
 }
 
-/* Navigation - horizontal row */
 .navigation {
     display: flex;
     justify-content: center;
@@ -43,7 +40,6 @@ h1 {
     text-decoration: underline;
 }
 
-/* Main content */
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -59,7 +55,6 @@ main {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Three elements in a horizontal row */
 .expectations {
     display: flex;
     gap: 20px;
@@ -91,29 +86,23 @@ footer {
     padding: 20px;
 }
 
-/* ---------------------------------
-   Responsive layout below 720px
-   --------------------------------- */
 @media (max-width: 719px) {
 
-    /* Navigation changes from horizontal row to vertical column */
     .navigation {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    /* Expectation boxes change from row to column */
+    
     .expectations {
         flex-direction: column;
     }
 
-    /* Hide the subtitle on small screens */
     .subtitle {
         display: none;
     }
 
-    /* Hide the About navigation link */
     .navigation a:last-child {
         display: none;
     }
@@ -127,7 +116,6 @@ footer {
     }
 }
 
-/* Airplane SVG */
 .airplane {
     background-color: white;
     padding: 25px;
