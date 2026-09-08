@@ -8,7 +8,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #2563eb;
+    background-color: #9eadce;
     color: white;
     padding: 40px 20px;
 }
@@ -26,7 +26,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 40px;
-    background-color: #172554;
+    background-color: #051a5f;
     padding: 15px;
 }
 
@@ -71,7 +71,7 @@ main {
 }
 
 .expectation h3 {
-    color: #1d4ed8;
+    color: #57658b;
 }
 
 .wishes li {
@@ -81,12 +81,12 @@ main {
 /* Footer */
 footer {
     text-align: center;
-    background-color: #172554;
+    background-color: #383e4f;
     color: white;
     padding: 20px;
 }
 
-@media (max-width: 719px) {
+@media (max-width: 720px) {
 
     .navigation {
         flex-direction: column;
@@ -117,7 +117,7 @@ footer {
 }
 
 .airplane {
-    background-color: white;
+    background-color: grey;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 10px;
