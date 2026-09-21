@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Board: 8x8 CSS grid, squares sized so the board stays reasonably
+   large but still fits typical viewports; each square is a perfect
+   square via aspect-ratio, and grid gaps are zero so there are no
+   gaps between squares. */
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  gap: 0;
+  border: 2px solid #222;
+  width: max-content;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.square-light {
+  background-color: #f0d9b5;
+}
+
+.square-dark {
+  background-color: #7b5836;
+}
