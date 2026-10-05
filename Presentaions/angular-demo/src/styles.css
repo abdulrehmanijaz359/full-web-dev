@@ -1,0 +1,21 @@
+/* Same stylesheet for all three demos so the videos look identical */
+:root { --ink:#1d2433; --paper:#f6f7fb; --card:#ffffff; --accent:#2f5bea; --line:#dde1ec; --muted:#6b7385; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--paper); color:var(--ink); }
+.app { max-width: 440px; margin: 40px auto; padding: 0 16px; }
+h1 { font-size: 1.4rem; margin: 0 0 20px; }
+h2 { font-size: 1rem; margin: 0 0 12px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px; margin-bottom:20px; }
+.counter { display:flex; align-items:center; gap:16px; }
+.counter output { font-size:2rem; min-width:3ch; text-align:center; font-variant-numeric: tabular-nums; }
+button { font:inherit; padding:8px 14px; border:1px solid var(--accent); background:var(--accent); color:#fff; border-radius:6px; cursor:pointer; }
+button.ghost { background:transparent; color:var(--accent); }
+button:focus-visible, input:focus-visible { outline:3px solid #9db4ff; outline-offset:2px; }
+.add { display:flex; gap:8px; margin-bottom:12px; }
+.add input { flex:1; font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:6px; }
+ul { list-style:none; margin:0; padding:0; }
+li { display:flex; align-items:center; gap:10px; padding:8px 0; border-top:1px solid var(--line); }
+li span { flex:1; }
+li.done span { text-decoration: line-through; color:var(--muted); }
+li button { padding:4px 10px; }
+.empty, .summary { color:var(--muted); font-size:.9rem; margin:8px 0 0; }
